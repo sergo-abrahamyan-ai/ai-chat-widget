@@ -4,6 +4,8 @@ A floating chat widget that answers customer questions 24/7 and books appointmen
 
 **Live demo:** https://ai-chat-widget-nu.vercel.app (click the 💬 button)
 
+![The assistant answers and books an appointment](docs/demo-booking.jpg)
+
 **Stack:** Next.js (App Router) · React · TypeScript · Tailwind CSS · n8n · OpenAI
 
 ## How it works
