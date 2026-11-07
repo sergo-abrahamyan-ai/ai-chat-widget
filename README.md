@@ -2,6 +2,8 @@
 
 A floating chat widget that answers customer questions 24/7 and books appointments. The demo is set up for a dental clinic: it knows prices and opening hours, collects the client's name, phone and preferred time, and hands the booking to the administrator.
 
+**Live demo:** https://ai-chat-widget-nu.vercel.app (click the 💬 button)
+
 **Stack:** Next.js (App Router) · React · TypeScript · Tailwind CSS · n8n · OpenAI
 
 ## How it works
