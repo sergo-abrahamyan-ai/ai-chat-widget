@@ -21,7 +21,8 @@ function isRateLimited(ip: string): boolean {
 }
 
 export async function POST(req: Request) {
-  const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+  // x-real-ip ставит сам хостинг (Vercel), клиент его подделать не может; x-forwarded-for — запасной вариант
+  const ip = req.headers.get("x-real-ip") || req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
   if (isRateLimited(ip)) {
     return Response.json({ reply: "Слишком много сообщений. Попробуйте через несколько минут или позвоните нам." }, { status: 429 });
   }
